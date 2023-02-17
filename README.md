@@ -1,4 +1,4 @@
-# sinatra-sidekiq
+# sidekiq-rack
 
 Sidekiq web server with sidekiq-scheduler of sinatra
 
@@ -20,13 +20,17 @@ Sidekiq web server with sidekiq-scheduler of sinatra
 
         $ bundle install
 
-3. start the sidekiq web server:
+3. Start the sidekiq web server:
 
-        $ rackup config.ru
+        $ rackup
 
    Run with `--help` or `-h` for options.
 
-4. Go to `http://localhost:9292` and you'll see the Rails bootscreen with your Rails and Ruby versions.
+4. In background running sidekiq web server
+
+        $ rackup --host 0.0.0.0 -p 9292 -D
+
+5. Go to `http://localhost:9292` and you'll see the Sidekiq bootscreen.
 
    Default username and password
 
