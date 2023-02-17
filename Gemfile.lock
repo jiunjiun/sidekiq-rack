@@ -1,0 +1,49 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    concurrent-ruby (1.2.0)
+    connection_pool (2.3.0)
+    dotenv (2.8.1)
+    et-orbi (1.2.7)
+      tzinfo
+    fugit (1.8.1)
+      et-orbi (~> 1, >= 1.2.7)
+      raabro (~> 1.4)
+    raabro (1.4.0)
+    rack (3.0.4.1)
+    rack-session (2.0.0)
+      rack (>= 3.0.0)
+    rackup (2.1.0)
+      rack (>= 3)
+      webrick (~> 1.8)
+    redis-client (0.12.2)
+      connection_pool
+    rufus-scheduler (3.8.2)
+      fugit (~> 1.1, >= 1.1.6)
+    sidekiq (7.0.5)
+      concurrent-ruby (< 2)
+      connection_pool (>= 2.3.0)
+      rack (>= 2.2.4)
+      redis-client (>= 0.11.0)
+    sidekiq-scheduler (5.0.1)
+      rufus-scheduler (~> 3.2)
+      sidekiq (>= 4, < 8)
+      tilt (>= 1.4.0)
+    tilt (2.0.11)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    webrick (1.8.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dotenv
+  rack-session
+  rackup
+  sidekiq
+  sidekiq-scheduler
+  webrick
+
+BUNDLED WITH
+   2.3.22
