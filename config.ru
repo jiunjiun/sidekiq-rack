@@ -5,7 +5,7 @@
 
 require 'sidekiq'
 require 'sidekiq/web'
-require 'sidekiq-scheduler/web'
+# require 'sidekiq-scheduler/web'
 require 'rack/session'
 
 require 'securerandom'
