@@ -7,6 +7,7 @@ require 'sidekiq'
 require 'sidekiq/web'
 # require 'sidekiq-scheduler/web'
 require 'rack/session'
+require 'rack/auth/basic'
 
 require 'securerandom'
 require 'dotenv/load'
